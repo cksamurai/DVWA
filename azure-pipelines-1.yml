@@ -1,4 +1,11 @@
 # Starter pipeline
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'HCL ASOC Connection Name'
+    applications: 'f0c3feea-9697-490d-a54f-6366c40c7308'
+    scanname: 'GitScanDetail'
+    scantype: 'static'
+    ScanSpeedOptions: 'simple'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
